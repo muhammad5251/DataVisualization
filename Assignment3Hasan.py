@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 app = dash.Dash(__name__)
+server = app.server
 
 data_url = "https://raw.githubusercontent.com/muhammad5251/DataVisualization/data/aggregate_data_2023-01-08.csv"
 data = pd.read_csv(data_url)
